@@ -1,6 +1,4 @@
-import os
 from google import genai
-
 
 class GeminiChat:
     def __init__(self, api_key: str):

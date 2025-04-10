@@ -1,7 +1,5 @@
 import tkinter as tk
-from tkinter import scrolledtext
 from dotenv import load_dotenv
-from ai.gemini import GeminiChat
 from gui.chatapp import ChatApp
 import os
 
