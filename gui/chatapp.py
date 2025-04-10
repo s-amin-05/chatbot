@@ -23,6 +23,7 @@ class ChatApp:
         
         self.entry = tk.Entry(self.entry_frame, width=40, font=("Arial", 12), bg="#1E1E1E", fg="white", insertbackground="white")
         self.entry.pack(side=tk.LEFT, padx=5)
+        self.entry.bind("<Return>", lambda event: self.process_message())
         
         self.send_button = tk.Button(self.entry_frame, text="Send", command=self.process_message, font=("Arial", 12), bg="#0078D7", fg="white")
         self.send_button.pack(side=tk.RIGHT)
